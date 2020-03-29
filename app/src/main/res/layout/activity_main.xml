@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +9,66 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Headline"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView_Explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Explanation"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Frame_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_dummy1"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView_Ball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ball1" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_dummy2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/button_shake"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
